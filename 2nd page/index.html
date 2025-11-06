@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muhammad Saran — AI Developer Portfolio</title>
+  <meta name="description" content="Muhammad Saran — AI Developer & Machine Learning Enthusiast. Explore real AI demos and projects built with Python, Hugging Face, and OpenAI APIs." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #11182b;
+      --muted: #9aa3c1;
+      --accent1: #6e8efb;
+      --accent2: #a777e3;
+      --glass: rgba(255,255,255,0.04);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: var(--bg);
+      color: #e6eef8;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    header.hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(110,142,251,0.08), rgba(167,119,227,0.06));
+    }
+    .hero h1 { font-size: 2.3rem; margin: 0; font-weight: 700; }
+    .hero p { color: var(--muted); margin-top: 8px; }
+    .actions { margin-top: 20px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: #fff;
+    }
+    .btn-primary:hover { transform: scale(1.05); }
+    .btn-ghost {
+      border: 1px solid var(--muted);
+      color: var(--muted);
+      margin-left: 10px;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 18px; margin-top: 34px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius: 14px;
+      padding: 18px;
+      border: 1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+    }
+    .project-title { font-weight: 700; font-size: 1.1rem; }
+    .project-desc { color: var(--muted); margin: 10px 0 14px; font-size: 0.95rem; }
+    .meta { background: var(--glass); padding: 6px 10px; border-radius: 999px; font-size: 0.82rem; color: var(--muted); }
+    .socials { display: flex; gap: 12px; justify-content: center; margin-top: 12px; }
+    .socials a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: var(--glass); text-decoration: none; color: inherit; }
+    footer { margin-top: 48px; padding: 28px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Muhammad Saran</h1>
+    <p>AI Developer & Machine Learning Enthusiast — creating intelligent applications using Python, Transformers, and Hugging Face APIs.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="../index.html">⬅ Back to Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Featured AI Projects</h2>
+    <p style="color:var(--muted)">Click <b>Test Demo</b> to explore real Hugging Face integrations.</p>
+
+    <div class="projects">
+      <article class="card">
+        <h3 class="project-title">Sentiment Analysis API</h3>
+        <p class="project-desc">A Hugging Face Transformers-powered API that analyzes text and predicts emotions: Positive, Negative, or Neutral. Built and tested in Google Colab.</p>
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://huggingface.co/spaces/qaisrani11/sentiment-analyzer-saran" target="_blank">🔬 Test Demo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="project-title">Image Classifier</h3>
+        <p class="project-desc">Deep learning-based classifier that detects objects and animals using a fine-tuned CNN model. Deployed via Gradio on Hugging Face.</p>
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://huggingface.co/spaces/saranqaisrani/image-classifier" target="_blank">🔬 Test Demo</a>
+          <!-- <a class="btn btn-ghost" href="https://github.com/saranqaisrani/image-classifier" target="_blank">💻 View Code</a> -->
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="project-title">Dog Food Recommendation System</h3>
+        <p class="project-desc">An ML-driven recommendation system that suggests dog food based on breed, health, and age. Developed with FastAPI and deployed to Hugging Face.</p>
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="https://huggingface.co/spaces/saranqaisrani/dog-food-recommender" target="_blank">🔬 Test Demo</a>
+          <!-- <a class="btn btn-ghost" href="https://github.com/saranqaisrani/dog-food-recommender" target="_blank">💻 View Code</a> -->
+        </div>
+      </article>
+    </div>
+
+    
+  </main>
+
+  <footer>
+    © 2025 Muhammad Saran. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
